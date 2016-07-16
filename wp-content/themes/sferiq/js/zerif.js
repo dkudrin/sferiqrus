@@ -344,6 +344,21 @@ jQuery(function() {
         'fgColor':' #E7AC44 '
 
     });
+    jQuery(".skill5").knob({
+
+        'max': 100,
+
+        'width': 64,
+
+        'readOnly': true,
+
+        'inputColor':' #FFFFFF ',
+
+        'bgColor':' #222222 ',
+
+        'fgColor':' #E7AC44 '
+
+    });
 
 });
 

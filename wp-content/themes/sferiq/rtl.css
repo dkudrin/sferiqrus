@@ -534,7 +534,8 @@ ul.nav > li.current_page_item.current > a:before {
 .skills .skill .skill1, 
 .skill2, 
 .skill3, 
-.skill4 {
+.skill4, 
+.skill5 {
 	margin-right: -50px;
 }
 

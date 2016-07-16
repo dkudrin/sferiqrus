@@ -292,31 +292,31 @@
 				
 				<!-- SKILL FIVE -->
 				<?php	
-					if( !empty($zerif_aboutus_feature4_nr) || !empty($zerif_aboutus_feature4_title) || !empty($zerif_aboutus_feature4_text) ):
+					if( !empty($zerif_aboutus_feature5_nr) || !empty($zerif_aboutus_feature5_title) || !empty($zerif_aboutus_feature5_text) ):
 				?>
 
-				<li class="skill skill_4">
+				<li class="skill skill_5">
 
 					<?php
 
-						if( !empty($zerif_aboutus_feature4_nr) ):
+						if( !empty($zerif_aboutus_feature5_nr) ):
 
 							echo '<div class="skill-count">';
 
-								echo '<input type="text" value="'.esc_attr( $zerif_aboutus_feature4_nr ).'" data-thickness=".2" class="skill4" tabindex="-1">';
+								echo '<input type="text" value="'.esc_attr( $zerif_aboutus_feature5_nr ).'" data-thickness=".2" class="skill5" tabindex="-1">';
 
 							echo '</div>';
 
 						endif;
 
-						if( !empty($zerif_aboutus_feature4_title) ):
-							echo '<div class="section-legend">'.wp_kses_post( $zerif_aboutus_feature4_title ).'</div>';
+						if( !empty($zerif_aboutus_feature5_title) ):
+							echo '<div class="section-legend">'.wp_kses_post( $zerif_aboutus_feature5_title ).'</div>';
 						elseif ( isset( $wp_customize ) ):
 							echo '<div class="section-legend zerif_hidden_if_not_customizer"></div>';
 						endif;
 
-						if( !empty($zerif_aboutus_feature4_text) ):
-							echo '<p>'.wp_kses_post( $zerif_aboutus_feature4_text ).'</p>';
+						if( !empty($zerif_aboutus_feature5_text) ):
+							echo '<p>'.wp_kses_post( $zerif_aboutus_feature5_text ).'</p>';
 						elseif ( isset( $wp_customize ) ):
 							echo '<p class="zerif_hidden_if_not_customizer"></p>';
 						endif;

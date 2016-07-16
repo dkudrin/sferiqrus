@@ -2245,7 +2245,7 @@ width: -webkit-calc(100% / 4);
 .skills li:last-child {
 	margin-bottom: 0;
 }
-.skills .skill .skill1,.skill2,.skill3,.skill4 {
+.skills .skill .skill1,.skill2,.skill3,.skill4,.skill5{
 	font-size: 16px !important;
 }
 .skills .skill .section-legend {

@@ -186,6 +186,21 @@
 		border: none;
 		color: #e7ac44;
 	}
+	.skills .skill .skill5 {
+		font-weight: bold;
+		font-style: normal;
+		font-variant: normal;
+		font-stretch: normal;
+		font-size: 20px;
+		line-height: normal;
+		font-family: Arial;
+		text-align: center;
+		color: rgb(255, 255, 255);
+		background: transparent;
+		width: 50px;
+		border: none;
+		color: #e7ac44;
+	}
 	.about-us .column {
 		float: left;
 	}
