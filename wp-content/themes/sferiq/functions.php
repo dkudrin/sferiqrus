@@ -1,7 +1,4 @@
 <?php
-/**
- * Zerif Lite functions and definitions
- */
 
 function zerif_setup() {    
 	
