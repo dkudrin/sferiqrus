@@ -183,6 +183,20 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 
 <?php
 
+	/* ABOUT US */
+
+	$zerif_aboutus_show = get_theme_mod('zerif_aboutus_show');
+
+	if( isset($zerif_aboutus_show) && $zerif_aboutus_show != 1 ):
+	
+	zerif_before_about_us_trigger();
+
+		get_template_part( 'sections/about_us' );
+	
+	zerif_after_about_us_trigger();
+
+	endif;
+	
 	/* OUR FOCUS SECTION */
 
 	$zerif_ourfocus_show = get_theme_mod('zerif_ourfocus_show');
@@ -201,19 +215,7 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 
 	get_template_part( 'sections/ribbon_with_bottom_button' );
 
-	/* ABOUT US */
 
-	$zerif_aboutus_show = get_theme_mod('zerif_aboutus_show');
-
-	if( isset($zerif_aboutus_show) && $zerif_aboutus_show != 1 ):
-	
-	zerif_before_about_us_trigger();
-
-		get_template_part( 'sections/about_us' );
-	
-	zerif_after_about_us_trigger();
-
-	endif;
 
 	/* OUR TEAM */
 
