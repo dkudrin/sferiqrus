@@ -6,7 +6,7 @@ Description: Theme for Sferiq.ru
 Version: 1.0.0.0
 License: GNU General Public License version 3
 License URI: license.txt
-Text Domain: zerif-lite
+Text Domain: sferiq
 Domain Path: /languages/
 */
 
@@ -2235,7 +2235,7 @@ width: -webkit-calc(100% / 4);
 	margin-bottom: 25px;
 }
 .skills .skill .skill-count {
-	display: inline-block;
+	display: none;
 	height: 64px;
 	margin-top: 3px;
 	float: left;

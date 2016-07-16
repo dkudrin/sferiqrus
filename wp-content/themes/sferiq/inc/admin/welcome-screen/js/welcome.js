@@ -4,7 +4,7 @@ jQuery(document).ready(function() {
     var zerif_nr_actions_required = zerifLiteWelcomeScreenObject.nr_actions_required;
 
     if ( (typeof zerif_nr_actions_required !== 'undefined') && (zerif_nr_actions_required != '0') ) {
-        jQuery('li.zerif-lite-w-red-tab a').append('<span class="zerif-lite-actions-count">' + zerif_nr_actions_required + '</span>');
+        jQuery('li.sferiq-w-red-tab a').append('<span class="sferiq-actions-count">' + zerif_nr_actions_required + '</span>');
     }
 
     /* Dismiss required actions */
@@ -18,20 +18,20 @@ jQuery(document).ready(function() {
             dataType   : "html",
             url        : zerifLiteWelcomeScreenObject.ajaxurl,
             beforeSend : function(data,settings){
-				jQuery('.zerif-lite-tab-pane#actions_required h1').append('<div id="temp_load" style="text-align:center"><img src="' + zerifLiteWelcomeScreenObject.template_directory + '/inc/admin/welcome-screen/img/ajax-loader.gif" /></div>');
+				jQuery('.sferiq-tab-pane#actions_required h1').append('<div id="temp_load" style="text-align:center"><img src="' + zerifLiteWelcomeScreenObject.template_directory + '/inc/admin/welcome-screen/img/ajax-loader.gif" /></div>');
             },
             success    : function(data){
 				jQuery("#temp_load").remove(); /* Remove loading gif */
                 jQuery('#'+ data).parent().remove(); /* Remove required action box */
 
-                var zerif_lite_actions_count = jQuery('.zerif-lite-actions-count').text(); /* Decrease or remove the counter for required actions */
+                var zerif_lite_actions_count = jQuery('.sferiq-actions-count').text(); /* Decrease or remove the counter for required actions */
                 if( typeof zerif_lite_actions_count !== 'undefined' ) {
                     if( zerif_lite_actions_count == '1' ) {
-                        jQuery('.zerif-lite-actions-count').remove();
-                        jQuery('.zerif-lite-tab-pane#actions_required').append('<p>' + zerifLiteWelcomeScreenObject.no_required_actions_text + '</p>');
+                        jQuery('.sferiq-actions-count').remove();
+                        jQuery('.sferiq-tab-pane#actions_required').append('<p>' + zerifLiteWelcomeScreenObject.no_required_actions_text + '</p>');
                     }
                     else {
-                        jQuery('.zerif-lite-actions-count').text(parseInt(zerif_lite_actions_count) - 1);
+                        jQuery('.sferiq-actions-count').text(parseInt(zerif_lite_actions_count) - 1);
                     }
                 }
             },
@@ -46,7 +46,7 @@ jQuery(document).ready(function() {
 		jQuery(event).parent().addClass("active");
         jQuery(event).parent().siblings().removeClass("active");
         var tab = jQuery(event).attr("href");
-        jQuery(".zerif-lite-tab-pane").not(tab).css("display", "none");
+        jQuery(".sferiq-tab-pane").not(tab).css("display", "none");
         jQuery(tab).fadeIn();
 	}
 
@@ -56,13 +56,13 @@ jQuery(document).ready(function() {
 		zerif_welcome_page_tabs('a[href="'+ zerif_actions_anchor +'"]');
 	}
 
-    jQuery(".zerif-lite-nav-tabs a").click(function(event) {
+    jQuery(".sferiq-nav-tabs a").click(function(event) {
         event.preventDefault();
 		zerif_welcome_page_tabs(this);
     });
 
 		/* Tab Content height matches admin menu height for scrolling purpouses */
-	 $tab = jQuery('.zerif-lite-tab-content > div');
+	 $tab = jQuery('.sferiq-tab-content > div');
 	 $admin_menu_height = jQuery('#adminmenu').height();
 	 if( (typeof $tab !== 'undefined') && (typeof $admin_menu_height !== 'undefined') )
 	 {

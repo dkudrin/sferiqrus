@@ -36,7 +36,7 @@
 
 	<?php
 		$footer_sections = 0;
-		$zerif_address = get_theme_mod('zerif_address',__('Company address','zerif-lite'));
+		$zerif_address = get_theme_mod('zerif_address',__('Company address','sferiq'));
 		$zerif_address_icon = get_theme_mod('zerif_address_icon',get_template_directory_uri().'/images/map25-redish.png');
 		
 		$zerif_email = get_theme_mod('zerif_email','<a href="mailto:contact@site.com">contact@site.com</a>');
@@ -191,7 +191,7 @@
 						echo '<p id="zerif-copyright" class="zerif_hidden_if_not_customizer"></p>';
 					endif;
 					
-					echo '<div class="zerif-copyright-box"><a class="zerif-copyright" href="http://themeisle.com/themes/zerif-lite/"'.$attribut_new_tab.' rel="nofollow">Zerif Lite </a>'.__('powered by','zerif-lite').'<a class="zerif-copyright" href="http://wordpress.org/"'.$attribut_new_tab.' rel="nofollow"> WordPress</a></div>';
+					echo '<div class="zerif-copyright-box"><a class="zerif-copyright" href="http://themeisle.com/themes/sferiq/"'.$attribut_new_tab.' rel="nofollow">Zerif Lite </a>'.__('powered by','sferiq').'<a class="zerif-copyright" href="http://wordpress.org/"'.$attribut_new_tab.' rel="nofollow"> WordPress</a></div>';
 					
 					echo '</div>';
 			

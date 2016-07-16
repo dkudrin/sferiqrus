@@ -4,9 +4,9 @@
  */
 ?>
 
-<div id="actions_required" class="zerif-lite-tab-pane">
+<div id="actions_required" class="sferiq-tab-pane">
 
-    <h1><?php esc_html_e( 'Keep up with Zerif Lite\'s latest news' ,'zerif-lite' ); ?></h1>
+    <h1><?php esc_html_e( 'Keep up with Zerif Lite\'s latest news' ,'sferiq' ); ?></h1>
 
     <!-- NEWS -->
     <hr />
@@ -57,7 +57,7 @@
 	endif;
 
 	if( $nr_actions_required == 0 ):
-		echo '<p>'.__( 'Hooray! There are no required actions for you right now.','zerif-lite' ).'</p>';
+		echo '<p>'.__( 'Hooray! There are no required actions for you right now.','sferiq' ).'</p>';
 	endif;
 	?>
 

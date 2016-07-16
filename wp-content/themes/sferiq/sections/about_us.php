@@ -11,7 +11,7 @@
 			
 			global $wp_customize;
 			
-			$zerif_aboutus_title = get_theme_mod('zerif_aboutus_title',__('About','zerif-lite'));
+			$zerif_aboutus_title = get_theme_mod('zerif_aboutus_title',__('About','sferiq'));
 			
 			if( !empty($zerif_aboutus_title) ):
 				echo '<h2 class="white-text">'. wp_kses_post( $zerif_aboutus_title ) .'</h2>';
@@ -24,7 +24,7 @@
 
 			<?php
 
-				$zerif_aboutus_subtitle = get_theme_mod('zerif_aboutus_subtitle',__('Use this section to showcase important details about your business.','zerif-lite'));
+				$zerif_aboutus_subtitle = get_theme_mod('zerif_aboutus_subtitle',__('Use this section to showcase important details about your business.','sferiq'));
 
 				if( !empty($zerif_aboutus_subtitle) ):
 
@@ -51,20 +51,23 @@
 
 		<?php
 
-			$zerif_aboutus_biglefttitle 	= get_theme_mod('zerif_aboutus_biglefttitle',__('Everything you see here is responsive and mobile-friendly.','zerif-lite'));
+			$zerif_aboutus_biglefttitle 	= get_theme_mod('zerif_aboutus_biglefttitle',__('Everything you see here is responsive and mobile-friendly.','sferiq'));
 			$zerif_aboutus_text 			= get_theme_mod('zerif_aboutus_text','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec massa enim. Aliquam viverra at est ullamcorper sollicitudin. Proin a leo sit amet nunc malesuada imperdiet pharetra ut eros.<br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec massa enim. Aliquam viverra at est ullamcorper sollicitudin. Proin a leo sit amet nunc malesuada imperdiet pharetra ut eros. <br><br>Mauris vel nunc at ipsum fermentum pellentesque quis ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas non adipiscing massa. Sed ut fringilla sapien. Cras sollicitudin, lectus sed tincidunt cursus, magna lectus vehicula augue, a lobortis dui orci et est.');
 			
-			$zerif_aboutus_feature1_title 	= get_theme_mod('zerif_aboutus_feature1_title',__('YOUR SKILL #1','zerif-lite'));
+			$zerif_aboutus_feature1_title 	= get_theme_mod('zerif_aboutus_feature1_title',__('YOUR SKILL #1','sferiq'));
 			$zerif_aboutus_feature1_text 	= get_theme_mod('zerif_aboutus_feature1_text');
 
-			$zerif_aboutus_feature2_title 	= get_theme_mod('zerif_aboutus_feature2_title',__('YOUR SKILL #2','zerif-lite'));
+			$zerif_aboutus_feature2_title 	= get_theme_mod('zerif_aboutus_feature2_title',__('YOUR SKILL #2','sferiq'));
 			$zerif_aboutus_feature2_text 	= get_theme_mod('zerif_aboutus_feature2_text');
 
-			$zerif_aboutus_feature3_title 	= get_theme_mod('zerif_aboutus_feature3_title',__('YOUR SKILL #3','zerif-lite'));
+			$zerif_aboutus_feature3_title 	= get_theme_mod('zerif_aboutus_feature3_title',__('YOUR SKILL #3','sferiq'));
 			$zerif_aboutus_feature3_text 	= get_theme_mod('zerif_aboutus_feature3_text');
 
-			$zerif_aboutus_feature4_title 	= get_theme_mod('zerif_aboutus_feature4_title',__('YOUR SKILL #4','zerif-lite'));
+			$zerif_aboutus_feature4_title 	= get_theme_mod('zerif_aboutus_feature4_title',__('YOUR SKILL #4','sferiq'));
 			$zerif_aboutus_feature4_text 	= get_theme_mod('zerif_aboutus_feature4_text');
+			
+			$zerif_aboutus_feature5_title 	= get_theme_mod('zerif_aboutus_feature5_title',__('YOUR SKILL #5','sferiq'));
+			$zerif_aboutus_feature5_text 	= get_theme_mod('zerif_aboutus_feature5_text');
 
 			$text_and_skills = '';
 			switch (
@@ -131,6 +134,7 @@
 			$zerif_aboutus_feature2_nr 	= get_theme_mod('zerif_aboutus_feature2_nr', '91');
 			$zerif_aboutus_feature3_nr 	= get_theme_mod('zerif_aboutus_feature3_nr', '88');
 			$zerif_aboutus_feature4_nr 	= get_theme_mod('zerif_aboutus_feature4_nr', '95');
+			$zerif_aboutus_feature5_nr 	= get_theme_mod('zerif_aboutus_feature5_nr', '96');
 
 			/* COLUMN 1 - SKILS */
 
@@ -254,7 +258,7 @@
 				<?php endif; ?>
 
 				<!-- SKILL FOUR -->
-				<?php	
+				<?php
 					if( !empty($zerif_aboutus_feature4_nr) || !empty($zerif_aboutus_feature4_title) || !empty($zerif_aboutus_feature4_text) ):
 				?>
 
@@ -339,7 +343,7 @@
 	<?php
 		if(is_active_sidebar( 'sidebar-aboutus' )):
 			echo '<div class="our-clients">';
-				echo '<h2><span class="section-footer-title">'.__('OUR HAPPY CLIENTS','zerif-lite').'</span></h2>';
+				echo '<h2><span class="section-footer-title">'.__('OUR HAPPY CLIENTS','sferiq').'</span></h2>';
 			echo '</div>';
 
 			echo '<div class="client-list">';

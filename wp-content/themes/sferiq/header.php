@@ -77,7 +77,7 @@ wp_head(); ?>
 
 				<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
 
-				<span class="sr-only"><?php _e('Toggle navigation','zerif-lite'); ?></span>
+				<span class="sr-only"><?php _e('Toggle navigation','sferiq'); ?></span>
 
 				<span class="icon-bar"></span>
 
@@ -122,7 +122,7 @@ wp_head(); ?>
 			</div>
 
 			<nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation"   id="site-navigation">
-				<a class="screen-reader-text skip-link" href="#content"><?php _e( 'Skip to content', 'zerif-lite' ); ?></a>
+				<a class="screen-reader-text skip-link" href="#content"><?php _e( 'Skip to content', 'sferiq' ); ?></a>
 				<?php wp_nav_menu( array('theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav navbar-nav navbar-right responsive-nav main-nav-list', 'fallback_cb'     => 'zerif_wp_page_menu')); ?>
 			</nav>
 

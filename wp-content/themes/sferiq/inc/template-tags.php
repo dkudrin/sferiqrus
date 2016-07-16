@@ -18,19 +18,19 @@ function zerif_paging_nav() {
 
 	<nav class="navigation paging-navigation" role="navigation">
 
-		<h2 class="screen-reader-text"><?php _e( 'Posts navigation', 'zerif-lite' ); ?></h2>
+		<h2 class="screen-reader-text"><?php _e( 'Posts navigation', 'sferiq' ); ?></h2>
 
 		<div class="nav-links">
 
 			<?php if ( get_next_posts_link() ) : ?>
 
-			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'zerif-lite' ) ); ?></div>
+			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'sferiq' ) ); ?></div>
 
 			<?php endif; ?>
 
 			<?php if ( get_previous_posts_link() ) : ?>
 
-			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'zerif-lite' ) ); ?></div>
+			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'sferiq' ) ); ?></div>
 
 			<?php endif; ?>
 
@@ -68,15 +68,15 @@ function zerif_post_nav() {
 
 	<nav class="navigation post-navigation" role="navigation">
 
-		<h2 class="screen-reader-text"><?php _e( 'Post navigation', 'zerif-lite' ); ?></h2>
+		<h2 class="screen-reader-text"><?php _e( 'Post navigation', 'sferiq' ); ?></h2>
 
 		<div class="nav-links">
 
 			<?php
 
-				previous_post_link( '<div class="nav-previous">%link</div>', _x( '<span class="meta-nav">&larr;</span> %title', 'Previous post link', 'zerif-lite' ) );
+				previous_post_link( '<div class="nav-previous">%link</div>', _x( '<span class="meta-nav">&larr;</span> %title', 'Previous post link', 'sferiq' ) );
 
-				next_post_link(     '<div class="nav-next">%link</div>',     _x( '%title <span class="meta-nav">&rarr;</span>', 'Next post link',     'zerif-lite' ) );
+				next_post_link(     '<div class="nav-next">%link</div>',     _x( '%title <span class="meta-nav">&rarr;</span>', 'Next post link',     'sferiq' ) );
 
 			?>
 
@@ -120,7 +120,7 @@ function zerif_posted_on() {
 
 	);
 
-	printf( __( '<span class="posted-on">Posted on %1$s</span><span class="byline"> by %2$s</span>', 'zerif-lite' ),
+	printf( __( '<span class="posted-on">Posted on %1$s</span><span class="byline"> by %2$s</span>', 'sferiq' ),
 
 		sprintf( '<a href="%1$s" rel="bookmark">%2$s</a>',
 

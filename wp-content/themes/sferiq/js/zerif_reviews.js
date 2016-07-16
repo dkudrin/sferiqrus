@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
 				if( zerifLiteAskingForReviewsObject.ask == 'no') {
 					jQuery('.customizer-review-link').remove();
 				} else {
-					jQuery('#customize-theme-controls').append('<div class="customizer-review-link"><p>Star this theme on <a href="https://wordpress.org/support/view/theme-reviews/zerif-lite" target="_blank">WordPress.org</a>!</p><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span></div>');
+					jQuery('#customize-theme-controls').append('<div class="customizer-review-link"><p>Star this theme on <a href="https://wordpress.org/support/view/theme-reviews/sferiq" target="_blank">WordPress.org</a>!</p><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span></div>');
 				}
 			},
 			error : function(jqXHR, textStatus, errorThrown) {   

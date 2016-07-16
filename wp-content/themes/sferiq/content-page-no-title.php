@@ -11,13 +11,13 @@
 		<?php
 			/* translators: %s: Name of current post */
 			the_content( sprintf(
-				__( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'zerif-lite' ),
+				__( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'sferiq' ),
 				the_title( '<span class="screen-reader-text">', '</span>', false )
 			) );
 		
 			wp_link_pages( array(
 
-				'before' => '<div class="page-links">' . __( 'Pages:', 'zerif-lite' ),
+				'before' => '<div class="page-links">' . __( 'Pages:', 'sferiq' ),
 
 				'after'  => '</div>',
 
@@ -27,6 +27,6 @@
 
 	</div><!-- .entry-content -->
 
-	<?php edit_post_link( __( 'Edit', 'zerif-lite' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer>' ); ?>
+	<?php edit_post_link( __( 'Edit', 'sferiq' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer>' ); ?>
 
 </article><!-- #post-## -->

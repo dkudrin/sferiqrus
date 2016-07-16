@@ -41,7 +41,7 @@ class Zerif_Welcome {
 	 * @since 1.8.2.4
 	 */
 	public function zerif_lite_welcome_register_menu() {
-		add_theme_page( 'About Zerif Lite', 'About Zerif Lite', 'activate_plugins', 'zerif-lite-welcome', array( $this, 'zerif_lite_welcome_screen' ) );
+		add_theme_page( 'About Zerif Lite', 'About Zerif Lite', 'activate_plugins', 'sferiq-welcome', array( $this, 'zerif_lite_welcome_screen' ) );
 	}
 
 	/**
@@ -63,8 +63,8 @@ class Zerif_Welcome {
 	public function zerif_lite_welcome_admin_notice() {
 		?>
 			<div class="updated notice is-dismissible">
-				<p><?php echo sprintf( esc_html__( 'Welcome! Thank you for choosing Zerif Lite! To fully take advantage of the best our theme can offer please make sure you visit our %swelcome page%s.', 'zerif-lite' ), '<a href="' . esc_url( admin_url( 'themes.php?page=zerif-lite-welcome' ) ) . '">', '</a>' ); ?></p>
-				<p><a href="<?php echo esc_url( admin_url( 'themes.php?page=zerif-lite-welcome' ) ); ?>" class="button" style="text-decoration: none;"><?php _e( 'Get started with Zerif Lite', 'zerif-lite' ); ?></a></p>
+				<p><?php echo sprintf( esc_html__( 'Welcome! Thank you for choosing Zerif Lite! To fully take advantage of the best our theme can offer please make sure you visit our %swelcome page%s.', 'sferiq' ), '<a href="' . esc_url( admin_url( 'themes.php?page=sferiq-welcome' ) ) . '">', '</a>' ); ?></p>
+				<p><a href="<?php echo esc_url( admin_url( 'themes.php?page=sferiq-welcome' ) ); ?>" class="button" style="text-decoration: none;"><?php _e( 'Get started with Zerif Lite', 'sferiq' ); ?></a></p>
 			</div>
 		<?php
 	}
@@ -75,9 +75,9 @@ class Zerif_Welcome {
 	 */
 	public function zerif_lite_welcome_style_and_scripts( $hook_suffix ) {
 
-		if ( 'appearance_page_zerif-lite-welcome' == $hook_suffix ) {
-			wp_enqueue_style( 'zerif-lite-welcome-screen-css', get_template_directory_uri() . '/inc/admin/welcome-screen/css/welcome.css' );
-			wp_enqueue_script( 'zerif-lite-welcome-screen-js', get_template_directory_uri() . '/inc/admin/welcome-screen/js/welcome.js', array('jquery') );
+		if ( 'appearance_page_sferiq-welcome' == $hook_suffix ) {
+			wp_enqueue_style( 'sferiq-welcome-screen-css', get_template_directory_uri() . '/inc/admin/welcome-screen/css/welcome.css' );
+			wp_enqueue_script( 'sferiq-welcome-screen-js', get_template_directory_uri() . '/inc/admin/welcome-screen/js/welcome.js', array('jquery') );
 
 			global $zerif_required_actions;
 
@@ -98,11 +98,11 @@ class Zerif_Welcome {
 				endforeach;
 			endif;
 
-			wp_localize_script( 'zerif-lite-welcome-screen-js', 'zerifLiteWelcomeScreenObject', array(
+			wp_localize_script( 'sferiq-welcome-screen-js', 'zerifLiteWelcomeScreenObject', array(
 				'nr_actions_required' => $nr_actions_required,
 				'ajaxurl' => admin_url( 'admin-ajax.php' ),
 				'template_directory' => get_template_directory_uri(),
-				'no_required_actions_text' => __( 'Hooray! There are no required actions for you right now.','zerif-lite' )
+				'no_required_actions_text' => __( 'Hooray! There are no required actions for you right now.','sferiq' )
 			) );
 		}
 	}
@@ -113,8 +113,8 @@ class Zerif_Welcome {
 	 */
 	public function zerif_lite_welcome_scripts_for_customizer() {
 
-		wp_enqueue_style( 'zerif-lite-welcome-screen-customizer-css', get_template_directory_uri() . '/inc/admin/welcome-screen/css/welcome_customizer.css' );
-		wp_enqueue_script( 'zerif-lite-welcome-screen-customizer-js', get_template_directory_uri() . '/inc/admin/welcome-screen/js/welcome_customizer.js', array('jquery'), '20120206', true );
+		wp_enqueue_style( 'sferiq-welcome-screen-customizer-css', get_template_directory_uri() . '/inc/admin/welcome-screen/css/welcome_customizer.css' );
+		wp_enqueue_script( 'sferiq-welcome-screen-customizer-js', get_template_directory_uri() . '/inc/admin/welcome-screen/js/welcome_customizer.js', array('jquery'), '20120206', true );
 
 		global $zerif_required_actions;
 
@@ -135,11 +135,11 @@ class Zerif_Welcome {
 			endforeach;
 		endif;
 
-		wp_localize_script( 'zerif-lite-welcome-screen-customizer-js', 'zerifLiteWelcomeScreenCustomizerObject', array(
+		wp_localize_script( 'sferiq-welcome-screen-customizer-js', 'zerifLiteWelcomeScreenCustomizerObject', array(
 			'nr_actions_required' => $nr_actions_required,
-			'aboutpage' => esc_url( admin_url( 'themes.php?page=zerif-lite-welcome#actions_required' ) ),
+			'aboutpage' => esc_url( admin_url( 'themes.php?page=sferiq-welcome#actions_required' ) ),
 			'customizerpage' => esc_url( admin_url( 'customize.php#actions_required' ) ),
-			'themeinfo' => __('View Theme Info','zerif-lite'),
+			'themeinfo' => __('View Theme Info','sferiq'),
 		) );
 	}
 
@@ -206,16 +206,16 @@ class Zerif_Welcome {
 		require_once( ABSPATH . 'wp-admin/admin-header.php' );
 		?>
 
-		<ul class="zerif-lite-nav-tabs" role="tablist">
-			<li role="presentation" class="active"><a href="#getting_started" aria-controls="getting_started" role="tab" data-toggle="tab"><?php esc_html_e( 'Getting started','zerif-lite'); ?></a></li>
-			<li role="presentation" class="zerif-lite-w-red-tab"><a href="#actions_required" aria-controls="actions_required" role="tab" data-toggle="tab"><?php esc_html_e( 'Actions required','zerif-lite'); ?></a></li>
-			<li role="presentation"><a href="#child_themes" aria-controls="child_themes" role="tab" data-toggle="tab"><?php esc_html_e( 'Child themes','zerif-lite'); ?></a></li>
-			<li role="presentation"><a href="#github" aria-controls="github" role="tab" data-toggle="tab"><?php esc_html_e( 'Contribute','zerif-lite'); ?></a></li>
-			<li role="presentation"><a href="#changelog" aria-controls="changelog" role="tab" data-toggle="tab"><?php esc_html_e( 'Changelog','zerif-lite'); ?></a></li>
-			<li role="presentation"><a href="#free_pro" aria-controls="free_pro" role="tab" data-toggle="tab"><?php esc_html_e( 'Free VS PRO','zerif-lite'); ?></a></li>
+		<ul class="sferiq-nav-tabs" role="tablist">
+			<li role="presentation" class="active"><a href="#getting_started" aria-controls="getting_started" role="tab" data-toggle="tab"><?php esc_html_e( 'Getting started','sferiq'); ?></a></li>
+			<li role="presentation" class="sferiq-w-red-tab"><a href="#actions_required" aria-controls="actions_required" role="tab" data-toggle="tab"><?php esc_html_e( 'Actions required','sferiq'); ?></a></li>
+			<li role="presentation"><a href="#child_themes" aria-controls="child_themes" role="tab" data-toggle="tab"><?php esc_html_e( 'Child themes','sferiq'); ?></a></li>
+			<li role="presentation"><a href="#github" aria-controls="github" role="tab" data-toggle="tab"><?php esc_html_e( 'Contribute','sferiq'); ?></a></li>
+			<li role="presentation"><a href="#changelog" aria-controls="changelog" role="tab" data-toggle="tab"><?php esc_html_e( 'Changelog','sferiq'); ?></a></li>
+			<li role="presentation"><a href="#free_pro" aria-controls="free_pro" role="tab" data-toggle="tab"><?php esc_html_e( 'Free VS PRO','sferiq'); ?></a></li>
 		</ul>
 
-		<div class="zerif-lite-tab-content">
+		<div class="sferiq-tab-content">
 
 			<?php
 			/**

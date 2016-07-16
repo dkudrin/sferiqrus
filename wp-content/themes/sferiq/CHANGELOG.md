@@ -154,7 +154,7 @@ Development
  * Fixes issue with Open New Window in Our Team
 
 Checks if there's a value. Fixes:
-https://github.com/Codeinwp/zerif-lite/issues/241
+https://github.com/Codeinwp/sferiq/issues/241
  * Merge pull request #242 from HardeepAsrani/development
 
  Fixes issue with Open New Window in Our Team
@@ -285,7 +285,7 @@ Typo
  * Updated about us section to be display in col-lg 4, 6 or 12 depending on what texts are set.
  * Fixed closing tag.
  * Updated contact us form style, error and success messages, made field required.
- * Fix to contact us form to scroll on submit as described in: https://github.com/Codeinwp/zerif-lite/issues/117
+ * Fix to contact us form to scroll on submit as described in: https://github.com/Codeinwp/sferiq/issues/117
  * Fixed #138 About us section
  * Merge pull request #142 from aurelijusrozenas/pr-contactSection
 

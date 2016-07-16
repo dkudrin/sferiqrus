@@ -2189,8 +2189,8 @@ msgid "Zerif Lite"
 msgstr "Zerif Lite"
 
 #. Theme URI of the plugin/theme
-msgid "http://themeisle.com/themes/zerif-lite/"
-msgstr "http://themeisle.com/themes/zerif-lite/"
+msgid "http://themeisle.com/themes/sferiq/"
+msgstr "http://themeisle.com/themes/sferiq/"
 
 #. Description of the plugin/theme
 msgid ""

@@ -23,7 +23,7 @@
 						
 					else:
 					
-						echo '<h2 class="dark-text">' . __('Latest news','zerif-lite') . '</h2>';
+						echo '<h2 class="dark-text">' . __('Latest news','sferiq') . '</h2>';
 						
 					endif;
 
@@ -96,7 +96,7 @@
 												$ismore = @strpos( $post->post_content, '<!--more-->');
 												
 												if($ismore) {
-													the_content( sprintf( esc_html__('[...]','zerif-lite'), '<span class="screen-reader-text">'.esc_html__('about ', 'zerif-lite').get_the_title().'</span>' ) );
+													the_content( sprintf( esc_html__('[...]','sferiq'), '<span class="screen-reader-text">'.esc_html__('about ', 'sferiq').get_the_title().'</span>' ) );
 												} else {
 													the_excerpt();
 												}
@@ -131,7 +131,7 @@
 												$ismore = @strpos( $post->post_content, '<!--more-->');
 												
 												if($ismore) {
-													the_content( sprintf( esc_html__('[...]','zerif-lite'), '<span class="screen-reader-text">'.esc_html__('about ', 'zerif-lite').get_the_title().'</span>' ) );
+													the_content( sprintf( esc_html__('[...]','sferiq'), '<span class="screen-reader-text">'.esc_html__('about ', 'sferiq').get_the_title().'</span>' ) );
 												} else {
 													the_excerpt();
 												}
@@ -160,11 +160,11 @@
 					/* Controls */
 					echo '<a class="left carousel-control" href="#carousel-homepage-latestnews" role="button" data-slide="prev">';
 						echo '<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>';
-						echo '<span class="sr-only">'.__('Previous','zerif-lite').'</span>';
+						echo '<span class="sr-only">'.__('Previous','sferiq').'</span>';
 					echo '</a>';
 					echo '<a class="right carousel-control" href="#carousel-homepage-latestnews" role="button" data-slide="next">';
 						echo '<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>';
-						echo '<span class="sr-only">'.__('Next','zerif-lite').'</span>';
+						echo '<span class="sr-only">'.__('Next','sferiq').'</span>';
 					echo '</a>';
 				echo '</div><!-- #carousel-homepage-latestnews -->';
 

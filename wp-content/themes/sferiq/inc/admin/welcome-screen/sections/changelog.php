@@ -3,14 +3,14 @@
  * Changelog
  */
 
-$zerif_lite = wp_get_theme( 'zerif-lite' );
+$zerif_lite = wp_get_theme( 'sferiq' );
 
 ?>
-<div class="zerif-lite-tab-pane" id="changelog">
+<div class="sferiq-tab-pane" id="changelog">
 
 	<div class="zerif-tab-pane-center">
 	
-		<h1>Zerif Lite <?php if( !empty($zerif_lite['Version']) ): ?> <sup id="zerif-lite-theme-version"><?php echo esc_attr( $zerif_lite['Version'] ); ?> </sup><?php endif; ?></h1>
+		<h1>Zerif Lite <?php if( !empty($zerif_lite['Version']) ): ?> <sup id="sferiq-theme-version"><?php echo esc_attr( $zerif_lite['Version'] ); ?> </sup><?php endif; ?></h1>
 
 	</div>
 

@@ -1,34 +1,34 @@
-.zerif-lite-nav-tabs {
+.sferiq-nav-tabs {
     margin-bottom: 0;
 }
-.zerif-lite-nav-tabs:after {
+.sferiq-nav-tabs:after {
     clear: both;
     display: table;
     content: " ";
 }
-.zerif-lite-nav-tabs > li {
+.sferiq-nav-tabs > li {
     float: left;
     margin-bottom: -1px;
     display: block;
 }
-.zerif-lite-nav-tabs > li > a {
+.sferiq-nav-tabs > li > a {
     border: 1px solid transparent;
     border-radius: 4px 4px 0 0;
     display: block;
     padding: 10px 15px;
 	text-decoration: none;
 }
-.zerif-lite-nav-tabs > li.active > a, .zerif-lite-nav-tabs > li.active > a:focus, .zerif-lite-nav-tabs > li.active > a:hover {
+.sferiq-nav-tabs > li.active > a, .sferiq-nav-tabs > li.active > a:focus, .sferiq-nav-tabs > li.active > a:hover {
     color: #555;
     background-color: #fff;
     border: 1px solid #ddd;
     border-bottom-color: transparent;
 }
-.zerif-lite-nav-tabs > li.zerif-lite-w-red-tab > a {
+.sferiq-nav-tabs > li.sferiq-w-red-tab > a {
     color: red;
     font-weight: bold;
 }
-.zerif-lite-tab-content {
+.sferiq-tab-content {
 	background-color: #fff;
     border-bottom: 1px solid #ddd;
     border-right: 1px solid #ddd;
@@ -36,33 +36,33 @@
     width: 960px;
     float: left;
 }
-.zerif-lite-tab-content > .tab-pane {
+.sferiq-tab-content > .tab-pane {
     display: none;
 }
-.zerif-lite-tab-content > .active {
+.sferiq-tab-content > .active {
     display: block;
 }
 
-.zerif-lite-tab-pane {
+.sferiq-tab-pane {
 	padding: 30px;
 }
-.zerif-lite-tab-pane {
+.sferiq-tab-pane {
     display: none;
 }
-.zerif-lite-tab-pane.active {
+.sferiq-tab-pane.active {
     display: block;
 }
 
-#zerif-lite-theme-version {
+#sferiq-theme-version {
     font-size: 50%;
     padding: 10px;
     background: #ccc;
 }
-#zerif-lite-w-screenshot {
+#sferiq-w-screenshot {
     border: 1px solid #ccc;
     margin-top: 30px;
 }
-.zerif-lite-w-activated {
+.sferiq-w-activated {
     cursor:not-allowed !important;
 }
 .zerif-tab-pane-half {
@@ -74,7 +74,7 @@
     padding-right: 20px;
     margin-bottom: 15px;
 }
-.zerif-lite-tab-content img {
+.sferiq-tab-content img {
     max-width: 100%;
 }
 .zerif-tab-pane-first-half {
@@ -85,16 +85,16 @@
     margin-bottom: 30px;
     margin-top: 30px;
 }
-.zerif-lite-welcome-title {
+.sferiq-welcome-title {
     font-size: 32px;
 }
-.zerif-lite-clear {
+.sferiq-clear {
     clear: both;
 }
-.zerif-lite-child-theme-container {
+.sferiq-child-theme-container {
     position: relative;
 }
-.zerif-lite-child-theme-description {
+.sferiq-child-theme-description {
     position: absolute;
     top: 100%;
     left: 0;
@@ -117,58 +117,58 @@
     transition-delay: 500ms;
 }
 
-.zerif-lite-child-theme-image-container {
+.sferiq-child-theme-image-container {
     position: relative;
     overflow: hidden;
 }
-.zerif-lite-child-theme-image-container img {
+.sferiq-child-theme-image-container img {
     max-width: 100%;
 }
-.zerif-lite-child-theme-details .theme-details {
+.sferiq-child-theme-details .theme-details {
     padding: 10px;
     background: none repeat scroll 0 0 #F1F1F1;
     font-size: 18px;
 }
 
-.zerif-lite-child-theme-details .theme-details.active {
+.sferiq-child-theme-details .theme-details.active {
     background: none repeat scroll 0 0 #2B5F87;
     color: #fff;
 }
 
-.zerif-lite-child-theme-details .theme-details .theme-name {
+.sferiq-child-theme-details .theme-details .theme-name {
     float:left;
 }
-.zerif-lite-child-theme-details .theme-details .preview {
+.sferiq-child-theme-details .theme-details .preview {
     margin-right: 2px;
 }
-.zerif-lite-fre-pro table {
+.sferiq-fre-pro table {
     border-collapse: collapse;
     width: 100%;
 }
-.zerif-lite-fre-pro table tr {
+.sferiq-fre-pro table tr {
     border-bottom: 1px solid #ddd;
 }
-.zerif-lite-fre-pro table td {
+.sferiq-fre-pro table td {
     padding: 30px;
 }
-.zerif-lite-fre-pro table th {
+.sferiq-fre-pro table th {
     padding-bottom: 30px;
 }
-.zerif-lite-fre-pro table td span.dashicons-before:before {
+.sferiq-fre-pro table td span.dashicons-before:before {
     font-size: 50px;
     width: auto;
     height: auto;
 }
-.zerif-lite-fre-pro table td span.dashicons-yes:before {
+.sferiq-fre-pro table td span.dashicons-yes:before {
     color:green;
 }
-.zerif-lite-fre-pro table td span.dashicons-no-alt:before {
+.sferiq-fre-pro table td span.dashicons-no-alt:before {
     color:red;
 }
-.zerif-lite-fre-pro table tr.zerif-lite-text-center {
+.sferiq-fre-pro table tr.sferiq-text-center {
     text-align: center;
 }
-.zerif-lite-actions-count {
+.sferiq-actions-count {
     padding: 0 6px;
     display: inline-block;
     background-color: #d54e21;
@@ -200,40 +200,40 @@
     background-color: #CC8C8C;
 }
 
-#github.zerif-lite-tab-pane {
+#github.sferiq-tab-pane {
   text-align: center;
 }
 
-#github.zerif-lite-tab-pane .zerif-tab-pane-half {
+#github.sferiq-tab-pane .zerif-tab-pane-half {
   min-height: 160px;
 }
 
-#github.zerif-lite-tab-pane .translate-button, #github .github-button {
+#github.sferiq-tab-pane .translate-button, #github .github-button {
   margin-top: 20px;
 }
 
-#github.zerif-lite-tab-pane .dashicons {
+#github.sferiq-tab-pane .dashicons {
   color: #0073aa;
   font-size: 12px;
   width: auto;
 }
 
-#github.zerif-lite-tab-pane h4 {
+#github.sferiq-tab-pane h4 {
   margin:10px;;
 }
 
-#github.zerif-lite-tab-pane p.review-link {
+#github.sferiq-tab-pane p.review-link {
   margin:0;
 }
 
-#github.zerif-lite-tab-pane .zerif-tab-pane-half hr {
+#github.sferiq-tab-pane .zerif-tab-pane-half hr {
   display: none;
 }
 
 /*Breakpoints*/
 
 @media (max-width: 1200px) {
-  .zerif-lite-tab-content {
+  .sferiq-tab-content {
     width: 98%;
   }
   .zerif-tab-pane-half {
@@ -241,7 +241,7 @@
   }
 }
 @media (max-width: 782px) {
-  #github.zerif-lite-tab-pane .zerif-tab-pane-half hr {
+  #github.sferiq-tab-pane .zerif-tab-pane-half hr {
     display:block;
   }
 
@@ -250,10 +250,10 @@
     float: none;
     border-left: none;
   }
-  .zerif-welcome-title, .zerif-lite-tab-content h1 {
+  .zerif-welcome-title, .sferiq-tab-content h1 {
     line-height: 30px;
   }
-  .zerif-lite-fre-pro table td {
+  .sferiq-fre-pro table td {
     padding: 30px 10px;
   }
 }

@@ -7,7 +7,7 @@ jQuery(document).ready(function() {
 
 	if( jQuery( ".zerif-upsells" ).length ) {
 
-		jQuery('.zerif-upsells').append('<a style="width: 80%; margin: 5px auto 5px auto; display: block; text-align: center;" href="http://themeisle.com/documentation-zerif-lite" class="button" target="_blank">{documentation}</a>'.replace('{documentation}', zerifLiteCustomizerObject.documentation));
+		jQuery('.zerif-upsells').append('<a style="width: 80%; margin: 5px auto 5px auto; display: block; text-align: center;" href="http://themeisle.com/documentation-sferiq" class="button" target="_blank">{documentation}</a>'.replace('{documentation}', zerifLiteCustomizerObject.documentation));
 
 	}
 	jQuery('.preview-notice').append('<a class="zerif-upgrade-to-pro-button" href="http://themeisle.com/themes/zerif-pro-one-page-wordpress-theme/" class="button" target="_blank">{pro}</a>'.replace('{pro}',zerifLiteCustomizerObject.pro));
