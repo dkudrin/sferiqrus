@@ -556,7 +556,7 @@ input[type="submit"] {
 	border-radius: 4px;
 	margin: 10px;
 	border: none;
-	background-color: #e96656;
+	background-color: #0EA778;
 	box-shadow: none;
 	text-shadow: none;
 	font-weight: 400;
@@ -1613,10 +1613,10 @@ object {
 }
 .navbar-inverse .navbar-nav>li>a:hover, 
 .navbar-inverse .navbar-nav>li>a:focus {
-	color: #e96656;
+	color: #00665D;
 }
 .navbar-inverse .navbar-nav>li.current>a {
-	color: #e96656;
+	color: #00665D;
 	position: relative;
 	outline: none;
 }
@@ -1631,7 +1631,7 @@ li.current>a:before {
 	content: "";
 	width: 75%;
 	height: 2px;
-	background: #e96656;
+	background: #00665D;
 	bottom: 0px;
 	left: 12.5%;
 }
@@ -1703,8 +1703,7 @@ ul.nav > li.current_page_item.current > a:before {
 .latest-publications {
 	padding-bottom: 66px;
 	padding-top: 100px;
-	background: #0EA778;
-	opacity: 0.7;
+	background: rgba(17, 167, 120, 0.7);
 }
 .carousel-inner {
 /*	margin: 0 30px; */
@@ -2205,7 +2204,7 @@ width: -webkit-calc(100% / 4);
 }
 .pirate_forms .pirate-forms-submit-button:hover {
 	color: #FFF;
-	background: #cb4332;
+	background: #A1C50A;
 }
 .pirate_forms_wrap label {
 	width: 100%;
@@ -2476,13 +2475,14 @@ width: -webkit-calc(100% / 4);
 .our-team {
 	padding-bottom: 66px;
 	padding-top: 100px;
-	background: #FFFFFF;
+	background: rgba(161, 197, 10, 0.7);
 }
 .team-member {
 	border-radius: 4px;
 	overflow: hidden;
 	position: relative;
 	margin-bottom: 35px;
+	opacity: 1;
 }
 .team-member .details {
 	text-align: left;
