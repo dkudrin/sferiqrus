@@ -91,8 +91,8 @@
 
 											echo '<div class="latesnews-content">';
 
-												echo '<h3 class="latestnews-title"><a href="'.esc_url( get_permalink() ).'" title="'.esc_attr( get_the_title() ).'">'.wp_kses_post( get_the_title() ).'</a></h3>';
-
+												echo '<h3 class="latestnews-title"><a href="'.esc_url( get_permalink() ).'" title="'.esc_attr( get_the_title() ).'">'.wp_kses_post( get_the_title() ).'</a></h3>'.'<b>'.get_the_date().'</b>';
+												
 												$ismore = @strpos( $post->post_content, '<!--more-->');
 												
 												if($ismore) {
@@ -101,7 +101,7 @@
 													the_excerpt();
 												}
 
-											echo '</div>';
+											echo  '</div>';
 
 										echo '</div><!-- .latestnews-box"> -->';
 
@@ -127,7 +127,7 @@
 											echo '</div>';
 											echo '<div class="latesnews-content">';
 												echo '<h3 class="latestnews-title"><a href="'.esc_url( get_permalink() ).'" title="'.esc_attr( get_the_title() ).'">'.wp_kses_post( get_the_title() ).'</a></h3>';
-												
+												echo  get_the_date();
 												$ismore = @strpos( $post->post_content, '<!--more-->');
 												
 												if($ismore) {
@@ -135,7 +135,7 @@
 												} else {
 													the_excerpt();
 												}
-											echo '</div>';
+											echo  '</div>';
 										echo '</div>';
 									echo '</div>';
 								}

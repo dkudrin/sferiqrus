@@ -497,7 +497,7 @@ thead th{
 	content: "";
 	width: 75%;
 	height: 2px;
-	background: #e96656;
+	background: #00665D;
 	bottom: -9px;
 	left: 12.5%;
 }
@@ -508,8 +508,8 @@ thead th{
 	content: "";
 	width: 75%;
 	height: 2px;
-	background: #34d293;
-	bottom: -9px;
+	background: #00665D;
+	top: -5px;
 	left: 12.5%;
 }
 .blue-border-bottom:before {
@@ -783,7 +783,7 @@ a:active {
 	width: 50%;
 }
 .nav-links a {
-	color:#e96656;
+	color:#00665D;
 }
 .site-main .post-navigation {
 	float: left;
@@ -890,7 +890,7 @@ a:active {
 	content: "";
 	width: 35%;
 	height: 2px;
-	background: #e96656;
+	background: #00665D;
 	bottom: -9px;
 	left: 0;
 }
@@ -1133,15 +1133,15 @@ a:active {
 	right: 0;
 }
 .comment-form #submit, .comment-reply-link {
-	background:#e96656;
-	border-color:#e96656;
+	background:#00665D;
+	border-color:#00665D;
 	color:#fff !important;
 }
 .comment-form #submit:hover,
 .comment-form #submit:focus, 
 .comment-form #submit:active {
 
-	background: #cb4332;
+	background: #00665D;
 }
 .comment-meta{
 
@@ -1795,10 +1795,14 @@ ul.nav > li.current_page_item.current > a:before {
 
 
 /*----  SECTION:  HOME > LATEST NEWS   ----*/
+#carousel-homepage-latestnews .latestnews-img a img {
+	border: 2px solid #00665D;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
 .latest-news {
 	padding-bottom: 66px;
 	padding-top: 100px;
-	background: #FFFFFF;
+	background: rgba(255, 255, 255, 0.6);
 }
 .carousel-inner {
 /*	margin: 0 30px; */
@@ -3297,7 +3301,7 @@ article .posted-on a:hover{
 	content: "";
 	width: 10%;
 	height: 2px;
-	background: #e96656;
+	background: #00665D;
 	bottom: -9px;
 	left: 0;
 }
