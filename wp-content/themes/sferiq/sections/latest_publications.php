@@ -19,11 +19,11 @@
 					/* title */
 					if( !empty($zerif_latestpublications_title) ):
 					
-						echo '<h2 class="dark-text">' . wp_kses_post( $zerif_latestpublications_title ) . '</h2>';
+						echo '<h2 class="white-text">' . wp_kses_post( $zerif_latestpublications_title ) . '</h2>';
 						
 					else:
 					
-						echo '<h2 class="dark-text">' . __('Latest publications','sferiq') . '</h2>';
+						echo '<h2 class="white-text">' . __('Latest publications','sferiq') . '</h2>';
 						
 					endif;
 
@@ -32,11 +32,11 @@
 
 					if( !empty($zerif_latestpublications_subtitle) ):
 
-						echo '<div class="dark-text section-legend">'.wp_kses_post( $zerif_latestpublications_subtitle ).'</div>';
+						echo '<div class="white-text section-legend">'.wp_kses_post( $zerif_latestpublications_subtitle ).'</div>';
 
 					elseif ( isset( $wp_customize ) ):
 					
-						echo '<div class="dark-text section-legend zerif_hidden_if_not_customizer"></div>';
+						echo '<div class="white-text section-legend zerif_hidden_if_not_customizer"></div>';
 						
 					endif;
 				
@@ -51,7 +51,7 @@
 					echo '<div class="carousel-inner" role="listbox">';
 						
 						
-						$zerif_latest_loop = new WP_Query( array( 'post_type' => 'post','category_name' => 'publications', 'posts_per_page' => $zerif_total_posts, 'order' => 'DESC','ignore_sticky_posts' => true ) );
+						$zerif_latest_loop = new WP_Query( array( 'post_type' => 'post', 'category_name' => 'publications', 'posts_per_page' => $zerif_total_posts, 'order' => 'DESC','ignore_sticky_posts' => true ) );
 						
 						$publicationslideActive = '<div class="item active">';
 						$publicationslide 		= '<div class="item">';
@@ -77,7 +77,7 @@
 
 											echo '<div class="latestpublications-img">';
 											
-												echo '<a class="latestpublications-img-a" href="'.esc_url( get_permalink() ).'" title="'.esc_attr( get_the_title() ).'">';
+												echo '<a class="latestpublications-img-a" href="'.esc_url(get_post_meta($post->ID, 'link', true) ).'" title="'.esc_attr( get_the_title() ).'">';
 
 													if ( has_post_thumbnail() ) :
 														the_post_thumbnail();
@@ -86,12 +86,12 @@
 													endif; 
 
 												echo '</a>';
-												
+
 											echo '</div>';
 
 											echo '<div class="latespublications-content">';
 
-												echo '<h3 class="latestpublications-title"><a href="'.esc_url( get_permalink() ).'" title="'.esc_attr( get_the_title() ).'">'.wp_kses_post( get_the_title() ).'</a></h3>';
+												echo '<h3 class="latestpublications-title"><a href="'.esc_url( get_post_meta($post->ID, 'link', true) ).'" title="'.esc_attr( get_the_title() ).'">'.wp_kses_post( get_the_title() ).'</a></h3>';
 
 												$ismore = @strpos( $post->post_content, '<!--more-->');
 												

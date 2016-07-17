@@ -231,19 +231,6 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 
 	endif;
 
-	/* TESTIMONIALS */
-
-	$zerif_testimonials_show = get_theme_mod('zerif_testimonials_show');
-
-	if( isset($zerif_testimonials_show) && $zerif_testimonials_show != 1 ):
-	
-	zerif_before_testimonials_trigger();
-
-		get_template_part( 'sections/testimonials' );
-	
-	zerif_after_testimonials_trigger();
-
-	endif;
 
 	/* RIBBON WITH RIGHT SIDE BUTTON */
 
