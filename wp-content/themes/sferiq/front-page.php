@@ -248,6 +248,20 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 	/* RIBBON WITH RIGHT SIDE BUTTON */
 
 	get_template_part( 'sections/ribbon_with_right_button' );
+	
+	/* LATEST publications */
+	$zerif_latestpublications_show = get_theme_mod('zerif_latestpublications_show');
+
+	if( isset($zerif_latestpublications_show) && $zerif_latestpublications_show != 1 ):
+	
+	zerif_before_latest_publications_trigger();
+
+		get_template_part( 'sections/latest_publications' );
+	
+	zerif_after_latest_publications_trigger();
+
+	endif;
+
 
 	/* LATEST NEWS */
 	$zerif_latestnews_show = get_theme_mod('zerif_latestnews_show');

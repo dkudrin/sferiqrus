@@ -1738,6 +1738,51 @@ function zerif_customize_register( $wp_customize ) {
 	    'section'  		=> 'zerif_latestnews_section',
 		'priority'   	=> 3,
 	));
+	
+	/**********************************************/
+    /**********	LATEST publications SECTION ***************/
+	/**********************************************/
+	$wp_customize->add_section( 'zerif_latestpublications_section' , array(
+		'title'       => __( 'Latest publications section', 'sferiq' ),
+    	'priority'    => 37
+	));
+
+	/* latest publications show/hide */
+	$wp_customize->add_setting( 'zerif_latestpublications_show', array(
+		'sanitize_callback' => 'zerif_sanitize_checkbox',
+		'transport' => 'postMessage'
+	));
+
+    $wp_customize->add_control( 'zerif_latestpublications_show', array(
+		'type' => 'checkbox',
+		'label' => __('Hide latest publications section?','sferiq'),
+		'section' => 'zerif_latestpublications_section',
+		'priority'    => 1,
+	));
+
+	/* latest publications title */
+	$wp_customize->add_setting( 'zerif_latestpublications_title', array(
+		'sanitize_callback' => 'zerif_sanitize_input',
+		'transport' => 'postMessage'
+	));
+
+	$wp_customize->add_control( 'zerif_latestpublications_title', array(
+		'label'    		=> __( 'Latest publications title', 'sferiq' ),
+		'section'  		=> 'zerif_latestpublications_section',
+		'priority'    	=> 2,
+	));
+
+	/* latest publications subtitle */
+	$wp_customize->add_setting( 'zerif_latestpublications_subtitle', array(
+		'sanitize_callback' => 'zerif_sanitize_input',
+		'transport' => 'postMessage'
+	));
+
+	$wp_customize->add_control( 'zerif_latestpublications_subtitle', array(
+		'label'    		=> __( 'Latest publications subtitle', 'sferiq' ),
+	    'section'  		=> 'zerif_latestpublications_section',
+		'priority'   	=> 3,
+	));
 
 	/***********************************************************/
 	/********* RIBBONS ****************************************/
